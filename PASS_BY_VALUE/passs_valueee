@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int changed(int x){
+    x= 100;
+    return x;
+}
+
+int main (){
+
+    int a = 10;
+    changed(a);
+    cout << a;
+}
