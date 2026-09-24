@@ -3,8 +3,7 @@ using namespace std;
 
 
 
-int DigitExtrction(int n){
-
+int NumofDigit(int n){
     int count = 0;
     while(n>0){
         count++;
@@ -13,6 +12,14 @@ int DigitExtrction(int n){
     return count;
 }
 
+void DigitExtraction(int n){
+    int digit = 0;
+    while(n>0){
+        digit = n%10;
+        cout << digit <<" ";
+        n=n/10;
+    }
+}
 
 int ReverseDigits(int x){
     int rev=0;
@@ -26,6 +33,6 @@ int ReverseDigits(int x){
 
 
 int main(){
-    int n=-12321;
-    cout<<boolalpha<<isPalindrome(n);
+    int n = 142321;
+    DigitExtraction(n);
 }
